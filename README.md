@@ -1,6 +1,8 @@
 # MSFS 2024 Touch Portal Control Panel
 
-A Touch Portal Pro configuration for controlling Microsoft Flight Simulator 2024, specifically designed for the **Cessna Citation Longitude (C700)**.
+> **Touch Portal MSFS2024 Button Panel for standard/generic buttons that should work with most planes in MSFS2024**
+
+A Touch Portal Pro configuration for controlling Microsoft Flight Simulator 2024. Originally designed for the **Cessna Citation Longitude (C700)**, but uses standard SimConnect actions that should work with most aircraft.
 
 ## Overview
 
