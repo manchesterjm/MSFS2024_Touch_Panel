@@ -1,6 +1,8 @@
 # MSFS 2024 Touch Portal Control Panel
 
-A Touch Portal Pro configuration for controlling Microsoft Flight Simulator 2024, specifically designed for the **Cessna Citation Longitude (C700)**.
+> **Touch Portal MSFS2024 Button Panel for standard/generic buttons that should work with most planes in MSFS2024**
+
+A Touch Portal Pro configuration for controlling Microsoft Flight Simulator 2024. Originally designed for the **Cessna Citation Longitude (C700)**, but uses standard SimConnect actions that should work with most aircraft.
 
 ## Overview
 
@@ -98,13 +100,37 @@ This project provides a complete Touch Portal page with buttons for autopilot, l
 | **LOC** | Localizer | AutoPilotLocalizerHold |
 | **BC** | Back Course | AutoPilotBackCourseHold |
 
-### Row 6 - Anti-Ice Systems (In Progress)
+### Row 6 - Anti-Ice Systems
 | Button | Function | State |
 |--------|----------|-------|
 | **STRC** | Structural De-Ice | StructuralDeIce |
 | **ENG1** | Engine 1 Anti-Ice | Engine1AntiIce |
 | **ENG2** | Engine 2 Anti-Ice | Engine2AntiIce |
 | **ATT** | Attitude Hold | AutoPilotAttitudeHold |
+
+### Row 7 - Additional Autopilot Modes
+| Button | Function | State |
+|--------|----------|-------|
+| **MACH** | Mach Hold | AutoPilotMachHold |
+| **N1** | N1 Hold | AutoPilotN1Hold |
+| **WLVL** | Wing Leveler | AutoPilotWingLeveler |
+| **BANK** | Bank Mode | AutoPilotBankMode |
+
+### Row 8 - Flaps Control
+| Button | Function | Notes |
+|--------|----------|-------|
+| **FLP UP** | Flaps Full Up | No state feedback |
+| **FLP DN** | Flaps Full Down | No state feedback |
+| **FLP +** | Flaps Increase | Incremental |
+| **FLP -** | Flaps Decrease | Incremental |
+
+### Row 9 - Trim Controls
+| Button | Function | Notes |
+|--------|----------|-------|
+| **TRIM UP** | Elevator Trim Up | No state feedback |
+| **TRIM DN** | Elevator Trim Down | No state feedback |
+| **AIL L** | Aileron Trim Left | No state feedback |
+| **AIL R** | Aileron Trim Right | No state feedback |
 
 ## Color Codes
 
@@ -113,6 +139,7 @@ This project provides a complete Touch Portal page with buttons for autopilot, l
 | Green | #00FF00 | -16711936 | ON/Active |
 | Red | #FF0000 | -65536 | OFF/Inactive |
 | Yellow | #FFFF00 | -256 | Default/Unknown |
+| Gray | #CCCCCC | -3355444 | No state feedback (action only) |
 
 ## File Structure
 
@@ -176,11 +203,13 @@ Monitors SimConnect state and changes button color:
 
 ## Future Enhancements
 
-- [ ] Row 7 buttons (Mach Hold, N1 Hold, Wing Leveler, Bank Mode)
-- [ ] Flaps increment/decrement buttons
-- [ ] Trim controls
+- [x] ~~Row 7 buttons (Mach Hold, N1 Hold, Wing Leveler, Bank Mode)~~
+- [x] ~~Flaps increment/decrement buttons~~
+- [x] ~~Trim controls~~
+- [ ] Rudder trim controls (Row 10)
 - [ ] Radio/COM frequency displays
 - [ ] Aircraft-specific profiles
+- [ ] Speed/altitude value displays
 
 ## Technical Reference
 
@@ -216,4 +245,4 @@ This configuration is provided as-is for personal use. Feel free to modify and s
 
 ---
 
-*Last updated: 2025-12-30*
+*Last updated: 2025-12-30 - Added Rows 6-9 (Anti-Ice, Additional AP, Flaps, Trim)*
